@@ -44,7 +44,6 @@ export const ArticleParamsForm = ({
 		rootRef: formRef,
 	});
 
-	console.log('вне клика', isFormOpen);
 	const handleFormReset = () => {
 		setFontFamily(defaultArticleState.fontFamilyOption);
 		setFontSize(defaultArticleState.fontSizeOption);
