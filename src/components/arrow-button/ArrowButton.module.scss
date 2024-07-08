@@ -25,6 +25,14 @@
 	transition: transform 0.5s ease;
 }
 
+.arrow:hover, .container:hover {
+	background-color: #FFC802;
+}
+
+.arrow:active, .container:active {
+	background-color: #787878;
+}
+
 .arrow_open {
 	transform: rotate(0deg);
 }
