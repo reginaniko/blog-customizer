@@ -10,11 +10,14 @@ export default meta;
 type Story = StoryObj<typeof ArrowButton>;
 
 export const ArrowButtonStory: Story = {
-	render: () => {
-		return (
-			<>
-				<ArrowButton />
-			</>
-		);
+	render: (args) => {
+	  return (
+		<>
+		  <ArrowButton {...args} />
+		</>
+	  );
 	},
-};
+	args: {
+	  onClick: () => alert('Arrow button clicked!'), // Provide a sample onClick handler
+	},
+  };

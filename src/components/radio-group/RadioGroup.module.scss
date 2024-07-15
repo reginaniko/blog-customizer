@@ -38,9 +38,13 @@
 	border: none;
 }
 
-.label:hover,
-.item[data-checked='true'] .label:hover {
-	background: var(--gold, #ffc802);
+// .label:hover,
+// .item[data-checked='true'] .label:hover {
+// 	background: var(--gold, #ffedab);
+// }
+
+.item:not([data-checked='true']):hover .label {
+    background: var(--gold, #ffedab);
 }
 
 .item[data-checked='true'] .label {
